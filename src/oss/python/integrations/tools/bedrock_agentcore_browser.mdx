@@ -223,7 +223,7 @@ elements = tools_by_name["get_elements"].invoke(
 ```python
 # Take screenshot (returns base64 image)
 screenshot = tools_by_name["take_screenshot"].invoke(
-    {"full_page": False},  # Set True for full page
+    {"capture_type": "viewport"},  # Use "full_page" for entire scrollable page
     config=config
 )
 
